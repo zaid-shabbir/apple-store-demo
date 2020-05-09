@@ -40,9 +40,9 @@ class SignUp extends Component {
       <div>
         <div className="signup-card">
           <div className="signup-form">
-            <h2 className="title">Sign-Up</h2>
+            <h2 className="signup-title">Sign-Up</h2>
             <form className="form" onSubmit={this.form.handleSubmit}>
-              <label htmlFor="name" className="field-label">
+              <label htmlFor="name" className="sign-up-field-labels">
                 Name
               </label>
               <input
@@ -57,7 +57,7 @@ class SignUp extends Component {
               <span className="error">
                 {this.state.errors.name ? this.state.errors.name : ""}
               </span>
-              <label htmlFor="email" className="field-label">
+              <label htmlFor="email" className="sign-up-field-labels">
                 Email
               </label>
               <input
@@ -72,7 +72,7 @@ class SignUp extends Component {
               <span className="error">
                 {this.state.errors.email ? this.state.errors.email : ""}
               </span>
-              <label htmlFor="password" className="field-label">
+              <label htmlFor="password" className="sign-up-field-labels">
                 Password
               </label>
               <input
