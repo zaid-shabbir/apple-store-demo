@@ -1,0 +1,76 @@
+.signup-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 360px;
+  height: 450px;
+  top: 50%;
+  left: 50%;
+  margin: -225px 0 0 -180px;
+  background: #ffffff;
+}
+.signup-form {
+  padding: 2rem;
+}
+.title {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+  font-family: poppins;
+  font-weight: 900;
+}
+.field-label {
+  display: block;
+  /* margin-top: 0.5rem; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-family: poppins;
+  font-weight: 500;
+}
+#name,
+#email,
+#password {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px lightgrey solid;
+  margin-bottom: 10px;
+  font-family: poppins;
+}
+.sign-up-btn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.7rem 3rem;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  font-family: poppins;
+  font-size: 12px;
+  font-weight: 500;
+}
+.sign-in-for-sign-up {
+  position: fixed;
+  top: 75%;
+  left: 50%;
+  width: 200px;
+  margin-top: 70px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-family: poppins;
+  font-weight: bolder;
+}
+.sign-in-link {
+  text-decoration: none;
+}
+.error {
+  color: red;
+  margin-top: -20px;
+  font-family: poppins;
+  font-weight: 400;
+  font-size: 12px;
+}

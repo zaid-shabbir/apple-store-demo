@@ -86,7 +86,7 @@ class Login extends Component {
         <div className="sign-up">
           Not registered?
           <Link to="/signup" className="sign-up-link">
-            &nbsp; Sign Up
+            &nbsp; Sign-Up
           </Link>
         </div>
       </div>
