@@ -25,6 +25,13 @@ class SignUp extends Component {
     this.form.onformsubmit = (fields) => {
       console.log(fields);
       alert("Signed Up Successfully");
+      this.setState({
+        fields: {
+          name: "",
+          email: "",
+          password: "",
+        },
+      });
     };
   }
 

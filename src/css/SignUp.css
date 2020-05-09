@@ -18,6 +18,10 @@
   font-family: poppins;
   font-weight: 900;
 }
+.title::before {
+  /* margin-bottom: 0px; */
+  margin-top: 50px;
+}
 .field-label {
   display: block;
   /* margin-top: 0.5rem; */
