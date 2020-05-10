@@ -25,8 +25,18 @@ function App() {
           <Route exact path="/" component={SignIn} />
           <Route exact path="/signup" component={Signup} />
           <Route exact path="/prehome" component={PreHome} />
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/iphone" component={Iphone} />
+          <Route
+            exact
+            path="/home"
+            render={() => (isAuth() ? <Home /> : <Redirect to="/?error403" />)}
+          />
+          <Route
+            exact
+            path="/iphone"
+            render={() =>
+              isAuth() ? <Iphone /> : <Redirect to="/?error403" />
+            }
+          />
           <Route
             exact
             path="/macbook"
