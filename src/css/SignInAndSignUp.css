@@ -1,0 +1,9 @@
+.sign-in-up-page {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: transparent linear-gradient(180deg, #5ac8fa 0%, #ffffff00 100%) 0%
+    0% no-repeat padding-box;
+  opacity: 1;
+}

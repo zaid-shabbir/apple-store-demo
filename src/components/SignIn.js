@@ -1,13 +1,13 @@
 import React from "react";
 import "../css/SignInAndSignUp.css";
-import SignUpForm from "./SignUpForm";
+import SignInForm from "./SignInForm";
 
-const SignUp = () => {
+const SignIn = () => {
   return (
     <div className="sign-in-up-page">
-      <SignUpForm />
+      <SignInForm />
     </div>
   );
 };
 
-export default SignUp;
+export default SignIn;

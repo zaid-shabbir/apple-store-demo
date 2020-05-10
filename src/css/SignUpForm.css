@@ -55,11 +55,11 @@
   font-weight: 500;
 }
 .sign-in-for-sign-up {
-  position: fixed;
+  position: absolute;
   top: 75%;
   left: 50%;
   width: 200px;
-  margin-top: 70px;
+  margin-top: 115px;
   margin-left: -200px;
   font-size: 12px;
   font-family: poppins;
