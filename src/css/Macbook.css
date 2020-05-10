@@ -62,8 +62,8 @@
 .macbook-pro-image {
   position: absolute;
   z-index: 15;
-  margin-left: 50vw;
-  width: 35vw;
+  margin-left: 40vw;
+  width: 45vw;
   opacity: 1;
   height: 55vh;
   /* background: transparent url(/src/assets/images/shutterstock_-1.png) 0% 0%

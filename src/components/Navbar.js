@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Navbar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 import logo from "../assets/images/AppleLogo.png";
 import account from "../assets/images/account_circle-24px.svg";
 
@@ -9,6 +9,7 @@ class Navbar extends React.Component {
     super(props);
 
     this.handleSignOut = () => {
+      localStorage.removeItem("apple-token");
       this.props.history.push("/");
     };
   }
@@ -63,4 +64,4 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar;
+export default withRouter(Navbar);

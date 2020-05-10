@@ -11,7 +11,7 @@ class PreHome extends React.Component {
   };
 
   componentDidMount() {
-    // this.timeout = setTimeout(() => this.setState({ redirect: true }), 5000);
+    this.timeout = setTimeout(() => this.setState({ redirect: true }), 2000);
   }
 
   render() {
@@ -59,21 +59,5 @@ class PreHome extends React.Component {
     );
   }
 }
-
-// const PreHome = () => {
-//   return (
-//     <div className="home">
-//       <div className="nav">
-//         <img src={logo} className="nav-logo" alt="logo" />>
-//       </div>
-//       <div className="home-page">
-//         <div className="im">
-//           <img src={apple} alt="apple" className="apple" />
-//         </div>
-//         <div className="year">20190000000000000000000000000000000</div>
-//       </div>
-//     </div>
-//   );
-// };
 
 export default PreHome;

@@ -28,6 +28,7 @@ class SignInForm extends Component {
         fields.email === "ugcmedia@gmail.com" &&
         fields.password === "123456"
       ) {
+        localStorage.setItem("apple-token", "thisisexampletoken");
         this.props.history.push("/home");
       }
       // else error will be shown at the top
