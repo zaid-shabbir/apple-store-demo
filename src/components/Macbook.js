@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Icons from "./Icons";
 import "../css/Macbook.css";
-import Mac from "../assets/images/shutterstock_-1.png";
+import Mac from "../assets/images/laptop.png";
 import AppleProducts from "../assets/images/shutterstock_-2.png";
 
 const Macbook = () => {

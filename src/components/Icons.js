@@ -8,7 +8,7 @@ import watch from "../assets/images/watch.png";
 const Icons = () => {
   return (
     <div className="vertical-icons">
-      <NavLink to="/iphone" onClick={handleClick} activeClassName="icon-active">
+      <NavLink to="/iphone" activeClassName="icon-active">
         <img
           id="iphone"
           src={iphone}
@@ -25,10 +25,10 @@ const Icons = () => {
     </div>
   );
 };
-const handleClick = () => {
-  var element = document.getElementById("iphone");
-  element.classList.add("icon-active");
-  console.log(this.location.pathname);
-};
+// const handleClick = () => {
+//   var element = document.getElementById("iphone");
+//   element.classList.add("icon-active");
+//   console.log(this.location.pathname);
+// };
 
 export default Icons;

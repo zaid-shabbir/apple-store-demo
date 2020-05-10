@@ -2,6 +2,7 @@ import React from "react";
 import "../css/Home.css";
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
+import apple from "../assets/images/apple-gray.png";
 import iphone from "../assets/images/iphone.png";
 import mac from "../assets/images/mac.png";
 import watch from "../assets/images/watch.png";
@@ -11,6 +12,7 @@ const Home = () => {
     <div>
       <Navbar />
       <div className="home">
+        <img src={apple} alt="apple" className="apple" />
         <div className="welcome-title-container">
           <p className="welcome-title">Welcome to Apple</p>
           <p className="products-title">See Our Products</p>

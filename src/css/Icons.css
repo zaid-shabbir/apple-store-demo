@@ -10,21 +10,21 @@
 .iphone-icon-vertical {
   width: 15px;
   height: 29px;
-  /* background-color: #cccccc; */
+  background-color: #cccccc;
 }
 .mac-icon-vertical {
   margin-top: 20px;
   width: 39px;
   height: 40px;
-  background-color: transparent;
-  /* background-color: #cccccc; */
+  /* background-color: transparent; */
+  background-color: #cccccc;
 }
 .watch-icon-vertical {
   margin-top: 20px;
   width: 30px;
   height: 31px;
-  /* background-color: #cccccc; */
+  background-color: #cccccc;
 }
 .icon-active {
-  background-color: white;
+  /* background-color: white; */
 }

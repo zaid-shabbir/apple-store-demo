@@ -28,7 +28,7 @@ class SignInForm extends Component {
         fields.email === "ugcmedia@gmail.com" &&
         fields.password === "123456"
       ) {
-        this.props.history.push("/prehome");
+        this.props.history.push("/home");
       }
       // else error will be shown at the top
       else {
@@ -46,9 +46,11 @@ class SignInForm extends Component {
           <div className="login-form">
             <h2 className="title">Sign-In</h2>
             <form className="form" onSubmit={this.form.handleSubmit}>
-              <span className="error">
-                {this.state.signin ? this.state.signin : ""}
-              </span>
+              <div className="login-error">
+                <span className="error">
+                  {this.state.signin ? this.state.signin : ""}
+                </span>
+              </div>
               <label htmlFor="email" className="field-label">
                 Email
               </label>

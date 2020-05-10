@@ -3,6 +3,7 @@ import "../css/PreHome.css";
 import { Redirect } from "react-router-dom";
 import logo from "../assets/images/AppleLogo.png";
 import apple from "../assets/images/apple.png";
+import CountUp from "react-countup";
 
 class PreHome extends React.Component {
   state = {
@@ -10,11 +11,7 @@ class PreHome extends React.Component {
   };
 
   componentDidMount() {
-    this.timeout = setTimeout(() => this.setState({ redirect: true }), 5000);
-  }
-
-  componentWillUnmount() {
-    clearTimeout(this.timeout);
+    // this.timeout = setTimeout(() => this.setState({ redirect: true }), 5000);
   }
 
   render() {
@@ -27,7 +24,36 @@ class PreHome extends React.Component {
         </div>
         <div className="pre-home-page">
           <img src={apple} alt="apple" className="pre-apple" />
-          <div className="year">20190000000000000000000000000000000</div>
+          <div className="counter">
+            <CountUp
+              className="year first-digit"
+              duration={3}
+              start={0}
+              separator=" "
+              end={2}
+            />
+            <CountUp
+              className="year second-digit"
+              duration={3}
+              start={20}
+              separator=" "
+              end={0}
+            />
+            <CountUp
+              className="year third-digit"
+              duration={2}
+              start={30}
+              separator=" "
+              end={1}
+            />
+            <CountUp
+              className="year fourth-digit"
+              duration={2}
+              start={50}
+              separator=" "
+              end={9}
+            />
+          </div>
         </div>
       </div>
     );

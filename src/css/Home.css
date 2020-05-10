@@ -9,6 +9,18 @@
   background-color: transparent;
   opacity: 1;
 }
+.apple {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  /* width: 100%; */
+  text-align: center;
+  width: 240px;
+  height: 280px;
+  margin: -90px 0 0 -125px;
+  opacity: 1;
+  z-index: -1;
+}
 .welcome-title-container {
   width: 100%;
   text-align: center;
@@ -40,7 +52,7 @@
   width: 15px;
   height: 29px;
   margin-left: 10px;
-  /* background-color: #cccccc; */
+  background-color: #cccccc;
 }
 .mac-icon {
   margin-left: 50px;
