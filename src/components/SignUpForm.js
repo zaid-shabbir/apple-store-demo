@@ -13,6 +13,7 @@ class SignUpForm extends Component {
         password: "",
       },
       errors: {}, //it will have errors if email or password invalid
+      signup: "",
     };
     this.form = new ReactFormInputValidation(this);
     // Rules for validation of form by "ReactFormInputValidation" pacakge
@@ -23,15 +24,20 @@ class SignUpForm extends Component {
     });
     // On submit this action will take place
     this.form.onformsubmit = (fields) => {
-      console.log(fields);
-      alert("Signed Up Successfully");
-      this.setState({
-        fields: {
-          name: "",
-          email: "",
-          password: "",
-        },
-      });
+      if (fields.password.length < 6) {
+        this.setState({
+          signup: "password must be equal to or greater than 6 characters",
+        });
+      } else {
+        alert("Signed Up Successfully");
+        this.setState({
+          fields: {
+            name: "",
+            email: "",
+            password: "",
+          },
+        });
+      }
     };
   }
 
@@ -42,6 +48,11 @@ class SignUpForm extends Component {
           <div className="signup-form">
             <h2 className="signup-title">Sign-Up</h2>
             <form className="form" onSubmit={this.form.handleSubmit}>
+              <div className="login-error">
+                <span className="error">
+                  {this.state.signup ? this.state.signup : ""}
+                </span>
+              </div>
               <label htmlFor="name" className="sign-up-field-labels">
                 Name
               </label>

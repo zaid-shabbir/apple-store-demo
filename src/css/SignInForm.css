@@ -55,7 +55,9 @@
   font-weight: 500;
 }
 .sign-up {
-  text-align: center;
+  position: absolute;
+  top: 92%;
+  left: 35%;
   margin-top: 50px;
   font-size: 12px;
   font-family: poppins;
