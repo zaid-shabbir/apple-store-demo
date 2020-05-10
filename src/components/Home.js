@@ -7,15 +7,13 @@ import iphone from "../assets/images/iphone.png";
 import mac from "../assets/images/mac.png";
 import watch from "../assets/images/watch.png";
 
-var user = true;
-const ProtectedComponent = () => {
-  if (!localStorage.getItem("apple-token")) user = false;
-  else user = true;
+const isAuth = () => {
+  if (!localStorage.getItem("apple-token")) return false;
+  else return true;
 };
 
 const Home = () => {
-  ProtectedComponent();
-  if (user) {
+  if (isAuth()) {
     return (
       <div>
         ProtectedComponent
