@@ -10,7 +10,6 @@ const Iphone = () => {
   return (
     <div>
       <Navbar />
-      <Icons />
       <div className="container">
         <div className="iphone-title-part">
           <p className="iphone-title">iPhone</p>
@@ -23,6 +22,7 @@ const Iphone = () => {
         <div className="iphone-image-part">
           <img src={iPhone} alt="iPhone" className="iphone-image" />
         </div>
+        <Icons />
       </div>
       <div className="bottom-part">
         <div className="inline">

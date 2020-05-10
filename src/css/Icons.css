@@ -1,9 +1,11 @@
 .vertical-icons {
+  position: absolute;
   margin-left: calc(100vw - 180px);
   margin-top: 35vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 15;
 }
 .iphone-icon-vertical {
   width: 15px;
@@ -14,6 +16,7 @@
   margin-top: 20px;
   width: 39px;
   height: 40px;
+  background-color: transparent;
   /* background-color: #cccccc; */
 }
 .watch-icon-vertical {
@@ -21,4 +24,7 @@
   width: 30px;
   height: 31px;
   /* background-color: #cccccc; */
+}
+.icon-active {
+  background-color: white;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Home.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import iphone from "../assets/images/iphone.png";
 import mac from "../assets/images/mac.png";
@@ -15,15 +15,15 @@ const Home = () => {
           <p className="welcome-title">Welcome to Apple</p>
           <p className="products-title">See Our Products</p>
           <div className="icons">
-            <Link to="/iphone">
+            <NavLink to="/iphone">
               <img src={iphone} alt="iPhone" className="iphone-icon" />
-            </Link>
-            <Link to="/macbook">
+            </NavLink>
+            <NavLink to="/macbook">
               <img src={mac} alt="MacBook" className="mac-icon" />
-            </Link>
-            <Link to="/watch">
+            </NavLink>
+            <NavLink to="/watch">
               <img src={watch} alt="Watch" className="watch-icon" />
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>

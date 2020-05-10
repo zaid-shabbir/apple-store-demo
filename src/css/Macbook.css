@@ -1,0 +1,143 @@
+.container {
+  margin-left: 102px;
+}
+.macbook-title-part {
+  position: absolute;
+  width: calc(100vw - 102px);
+  height: 55vh;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.macbook-title {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 3%;
+  font-family: poppins;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #5ac8fa;
+  opacity: 1;
+}
+.macbook-title-sub {
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-bottom: 0px;
+  width: 632px;
+  height: 250px;
+  font-family: poppins;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  line-height: 120px;
+}
+.macbook-title-specs {
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-bottom: 0;
+  font-family: poppins;
+  font-size: 50px;
+  font-weight: bold;
+  width: 190px;
+  height: 56px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #cccccc;
+  opacity: 0.44;
+}
+.macbook-title-specs-description {
+  margin-left: 3%;
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: bold;
+  width: 190px;
+  height: 40px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #cccccc;
+  opacity: 0.44;
+}
+.macbook-pro-image {
+  position: absolute;
+  z-index: 15;
+  margin-left: 50vw;
+  width: 35vw;
+  opacity: 1;
+  height: 55vh;
+  /* background: transparent url(/src/assets/images/shutterstock_-1.png) 0% 0%
+    no-repeat padding-box; */
+  opacity: 0.64;
+}
+.bottom-part-mac {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 102px;
+  top: 60vh;
+  width: calc(100vw - 102px);
+  height: calc(50vh - 300px);
+}
+.inline {
+  display: inline-flex;
+}
+.buy-now-mac {
+  margin-top: 50px;
+  margin-left: 81px;
+  width: 25vw;
+  height: 28px;
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #5ac8fa;
+  opacity: 1;
+}
+.apple-products {
+  margin-top: 60px;
+  margin-left: 10vw;
+}
+.apple-products-image {
+  width: 30vw;
+  height: 30vh;
+  opacity: 1;
+}
+.subscription-form {
+  margin-top: 10px;
+  padding-top: 70px;
+  width: 50%;
+  height: 25vh;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.subscribe-now {
+  margin-left: 108px;
+  /* margin-top: 602px; */
+  width: 274px;
+  height: 51px;
+  font-family: poppins;
+  font-size: 36px;
+  font-weight: bold;
+}
+.subscription-email-input {
+  margin-top: 50px;
+  margin-left: 70px;
+  padding-left: 15px;
+  width: 350px;
+  height: 54px;
+  /* width: 60%; */
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+}
+.subscription-button {
+  margin-top: -5px;
+  margin-left: 15px;
+  width: 154px;
+  height: 54px;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 1;
+  color: white;
+  border: none;
+}
