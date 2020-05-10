@@ -1,0 +1,24 @@
+.vertical-icons {
+  margin-left: calc(100vw - 180px);
+  margin-top: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.iphone-icon-vertical {
+  width: 15px;
+  height: 29px;
+  /* background-color: #cccccc; */
+}
+.mac-icon-vertical {
+  margin-top: 20px;
+  width: 39px;
+  height: 40px;
+  /* background-color: #cccccc; */
+}
+.watch-icon-vertical {
+  margin-top: 20px;
+  width: 30px;
+  height: 31px;
+  /* background-color: #cccccc; */
+}

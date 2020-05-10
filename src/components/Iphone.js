@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Icons from "./Icons";
 import "../css/Iphone.css";
 import iPhone from "../assets/images/Iphone 1.png";
 import iPhoneFront from "../assets/images/apple-iphonexs-max-gold.png";
@@ -9,6 +10,7 @@ const Iphone = () => {
   return (
     <div>
       <Navbar />
+      <Icons />
       <div className="container">
         <div className="iphone-title-part">
           <p className="iphone-title">iPhone</p>
@@ -20,11 +22,6 @@ const Iphone = () => {
         </div>
         <div className="iphone-image-part">
           <img src={iPhone} alt="iPhone" className="iphone-image" />
-          <div className="vertical-icons">
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-          </div>
         </div>
       </div>
       <div className="bottom-part">
