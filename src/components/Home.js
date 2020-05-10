@@ -10,7 +10,6 @@ import watch from "../assets/images/watch.png";
 const Home = () => {
   return (
     <div>
-      ProtectedComponent
       <Navbar />
       <div className="home">
         <img src={apple} alt="apple" className="apple" />
