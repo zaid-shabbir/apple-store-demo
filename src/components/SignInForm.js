@@ -14,30 +14,36 @@ class SignInForm extends Component {
       errors: {}, //it will have errors if email or password invalid
       signin: "", //it will have sign in error if user is not authenticated
     };
-    this.form = new ReactFormInputValidation(this);
-    // Rules for validation of form by "ReactFormInputValidation" pacakge
+    this.form = new ReactFormInputValidation(this); // Rules for validation of form by "ReactFormInputValidation" pacakge
     this.form.useRules({
       email: "required|email",
       password: "required",
     });
-    // On submit this action will take place
     this.form.onformsubmit = (fields) => {
-      console.log(fields);
-      // if fields are matched to this, user will go to home page
+      this.setState({ signin: "" });
+      // On submit this action will take place
       if (
+        // if fields are matched to this, user will go to home page
         fields.email === "ugcmedia@gmail.com" &&
         fields.password === "123456"
       ) {
         localStorage.setItem("apple-token", "thisisexampletoken");
-        this.props.history.push("/home");
-      }
-      // else error will be shown at the top
-      else {
+        setTimeout(() => {
+          this.props.history.push("/home");
+        }, 500);
+      } else {
+        // else error will be shown at the top
         setTimeout(() => {
           this.setState({ signin: "Unable to login" });
         }, 500);
       }
     };
+  }
+  componentDidMount() {
+    let err = this.props.location.search;
+    if (err.includes(403)) {
+      this.setState({ signin: "Login to Continue!!" });
+    }
   }
 
   render() {
