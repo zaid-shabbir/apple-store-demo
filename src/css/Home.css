@@ -40,16 +40,17 @@
   width: 15px;
   height: 29px;
   margin-left: 10px;
-  background-color: #cccccc;
+  /* background-color: #cccccc; */
 }
 .mac-icon {
   margin-left: 50px;
   width: 39px;
   height: 40px;
+  /* background-color: #cccccc; */
 }
 .watch-icon {
   margin-left: 50px;
   width: 30px;
   height: 31px;
-  background: #cccccc 0% 0% no-repeat padding-box;
+  /* background-color: #cccccc; */
 }
