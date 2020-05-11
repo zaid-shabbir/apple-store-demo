@@ -9,6 +9,7 @@ const Macbook = () => {
   return (
     <div>
       <Navbar />
+      <Icons className="icons-component" />
       <div className="container">
         <div className="macbook-title-part">
           <div className="macbook-title">MacBook Pro</div>
@@ -23,7 +24,6 @@ const Macbook = () => {
           </div>
           <img src={Mac} alt="MacBook Pro" className="macbook-pro-image" />
         </div>
-        <Icons className="icons-component" />
         <div className="bottom-part-mac">
           <div className="inline">
             <div className="buy-now-mac-container">
