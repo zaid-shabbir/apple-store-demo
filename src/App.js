@@ -20,7 +20,7 @@ function isAuth() {
 function App() {
   return (
     <div className="app">
-      <Router basename="/dp">
+      <Router>
         <Switch>
           <Route exact path="/" component={SignIn} />
           <Route exact path="/signup" component={Signup} />
