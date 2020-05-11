@@ -2,7 +2,7 @@
   margin-left: 102px;
 }
 .macbook-title-part {
-  position: absolute;
+  position: relative;
   width: calc(100vw - 102px);
   height: 55vh;
   background: #000000 0% 0% no-repeat padding-box;
@@ -10,7 +10,7 @@
 }
 .macbook-title {
   position: absolute;
-  margin-top: 2%;
+  margin-top: 7vh;
   margin-left: 3%;
   font-family: poppins;
   font-size: 32px;
@@ -20,7 +20,8 @@
   opacity: 1;
 }
 .macbook-title-sub {
-  margin-top: 5%;
+  position: absolute;
+  margin-top: 15vh;
   margin-left: 3%;
   margin-bottom: 0px;
   width: 632px;
@@ -33,10 +34,10 @@
   opacity: 1;
   line-height: 120px;
 }
-.macbook-title-specs {
-  margin-top: 2%;
-  margin-left: 3%;
+.macbook-specs {
+  margin-top: 37vh;
   margin-bottom: 0;
+  margin-left: 3%;
   font-family: poppins;
   font-size: 50px;
   font-weight: bold;
@@ -47,7 +48,7 @@
   color: #cccccc;
   opacity: 0.44;
 }
-.macbook-title-specs-description {
+.macbook-specs-description {
   margin-left: 3%;
   font-family: poppins;
   font-size: 20px;
@@ -61,31 +62,31 @@
 }
 .macbook-pro-image {
   position: absolute;
+  top: 0px;
   z-index: 15;
   margin-left: 40vw;
-  width: 45vw;
+  width: 50vw;
   opacity: 1;
   height: 55vh;
-  /* background: transparent url(/src/assets/images/shutterstock_-1.png) 0% 0%
-    no-repeat padding-box; */
   opacity: 0.64;
 }
 .bottom-part-mac {
-  position: absolute;
-  margin-top: 2%;
-  margin-left: 102px;
-  top: 60vh;
-  width: calc(100vw - 102px);
-  height: calc(50vh - 300px);
+  position: relative;
+  width: calc(100vw - 110px);
+  height: calc(45vh - 120px);
+  border: 2px solid red;
 }
 .inline {
   display: inline-flex;
 }
+.buy-now-mac-container {
+  min-width: 200px;
+  margin-left: 30%;
+  margin-top: 50%;
+  height: 100%;
+}
 .buy-now-mac {
-  margin-top: 50px;
-  margin-left: 81px;
-  width: 25vw;
-  height: 28px;
+  padding-left: 20%;
   font-family: poppins;
   font-size: 20px;
   font-weight: 700;
@@ -94,34 +95,44 @@
   opacity: 1;
 }
 .apple-products {
-  margin-top: 60px;
+  position: absolute;
+  right: 35vw;
+  margin-top: 1%;
   margin-left: 10vw;
+  height: 94%;
 }
 .apple-products-image {
+  height: 100%;
   width: 30vw;
-  height: 30vh;
   opacity: 1;
 }
 .subscription-form {
-  margin-top: 25px;
-  padding-top: 50px;
-  width: 40%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  margin-top: -4vh;
+  padding: 50px 0px;
+  width: 35vw;
   height: 25vh;
   background: #f2f2f2 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 .subscribe-now {
-  display: block;
-  margin-left: 108px;
-  width: 274px;
+  position: absolute;
+  margin-top: -100px;
+  margin-left: -150px;
+  width: 374px;
   height: 51px;
   font-family: poppins;
   font-size: 36px;
   font-weight: bold;
 }
 .subscription-email-input {
+  position: absolute;
   margin-top: 50px;
-  margin-left: 20px;
+  margin-left: -50px;
   padding-left: 15px;
   width: 350px;
   height: 54px;
@@ -131,8 +142,9 @@
   border: none;
 }
 .subscription-button {
-  margin-top: -5px;
-  margin-left: 15px;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 250px;
   width: 154px;
   height: 54px;
   background: #000000 0% 0% no-repeat padding-box;
