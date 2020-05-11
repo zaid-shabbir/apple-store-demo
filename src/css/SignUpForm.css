@@ -67,13 +67,6 @@
 .sign-in-link {
   text-decoration: none;
 }
-.error {
-  color: red;
-  margin-top: -20px;
-  font-family: poppins;
-  font-weight: 400;
-  font-size: 12px;
-}
 .login-error {
   text-align: center;
 }
