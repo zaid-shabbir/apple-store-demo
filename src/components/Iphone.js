@@ -10,14 +10,12 @@ import iPhoneRareThumbnail from "../assets/images/apple-iphonexs-max-gold-back-2
 class Iphone extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props);
     this.state = {
       front: true,
     };
   }
   handle = () => {
     this.setState({ front: !this.state.front });
-    console.log(this.state);
   };
 
   render() {
