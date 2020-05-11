@@ -37,16 +37,16 @@ class Navbar extends React.Component {
             MacBook Pro
           </NavLink>
           <NavLink
-            to="/watch"
+            to="#"
             className="nav-link watch"
-            activeClassName="navbar-link-active"
+            // activeClassName="navbar-link-active"
           >
             Watch
           </NavLink>
           <NavLink
-            to="/notify"
+            to="#"
             className="nav-link notify"
-            activeClassName="navbar-link-active"
+            // activeClassName="navbar-link-active"
           >
             Notify me
           </NavLink>
