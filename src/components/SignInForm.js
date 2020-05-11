@@ -91,9 +91,11 @@ class SignInForm extends Component {
                 onChange={this.form.handleChangeEvent}
                 value={this.state.fields.password}
               />
-              <span className="error">
-                {this.state.errors.password ? this.state.errors.password : ""}
-              </span>
+              <div className="error-container">
+                <span className="error">
+                  {this.state.errors.password ? this.state.errors.password : ""}
+                </span>
+              </div>
               <input type="submit" value="Sign-In" className="sign-in" />
             </form>
           </div>
