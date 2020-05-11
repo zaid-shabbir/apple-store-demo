@@ -8,19 +8,19 @@
   z-index: 15;
 }
 .iphone-icon-vertical {
-  width: 37px;
-  height: 40px;
-  /* background-color: #cccccc; */
+  width: 15px;
+  height: 29px;
+  background-color: #707070;
 }
 .mac-icon-vertical {
   margin-top: 20px;
-  width: 30px;
-  height: 35px;
-  /* background-color: #cccccc; */
+  width: 32px;
+  height: 23px;
+  background-color: #ffffff;
 }
 .watch-icon-vertical {
   margin-top: 20px;
-  width: 33px;
-  height: 35px;
-  /* background-color: #cccccc; */
+  width: 19px;
+  height: 31px;
+  background-color: #707070;
 }
