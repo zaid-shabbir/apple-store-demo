@@ -58,7 +58,7 @@ class SignInForm extends Component {
             <h2 className="title">Sign-In</h2>
             <form className="form" onSubmit={this.form.handleSubmit}>
               <div className="login-error">
-                <span className="error">
+                <span className="error-top">
                   {this.state.signin ? this.state.signin : ""}
                 </span>
               </div>
