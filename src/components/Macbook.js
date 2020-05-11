@@ -9,7 +9,7 @@ const Macbook = () => {
   return (
     <div>
       <Navbar />
-      <Icons className="icons-component" />
+      <Icons />
       <div className="container">
         <div className="macbook-title-part">
           <div className="macbook-title">MacBook Pro</div>
