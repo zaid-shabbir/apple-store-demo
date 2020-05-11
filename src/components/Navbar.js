@@ -36,18 +36,10 @@ class Navbar extends React.Component {
           >
             MacBook Pro
           </NavLink>
-          <NavLink
-            to="#"
-            className="nav-link watch"
-            // activeClassName="navbar-link-active"
-          >
+          <NavLink to="#" className="nav-link watch">
             Watch
           </NavLink>
-          <NavLink
-            to="#"
-            className="nav-link notify"
-            // activeClassName="navbar-link-active"
-          >
+          <NavLink to="#" className="nav-link notify">
             Notify me
           </NavLink>
 

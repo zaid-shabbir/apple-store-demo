@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3f100f49.chunk.css",
+    "main.js": "/static/js/main.75854032.chunk.js",
+    "main.js.map": "/static/js/main.75854032.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d33835c5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d33835c5.js.map",
+    "static/js/2.6ae8e781.chunk.js": "/static/js/2.6ae8e781.chunk.js",
+    "static/js/2.6ae8e781.chunk.js.map": "/static/js/2.6ae8e781.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f34256b01e8d6db7a171bb43d8429547.js": "/precache-manifest.f34256b01e8d6db7a171bb43d8429547.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3f100f49.chunk.css.map": "/static/css/main.3f100f49.chunk.css.map",
+    "static/js/2.6ae8e781.chunk.js.LICENSE.txt": "/static/js/2.6ae8e781.chunk.js.LICENSE.txt",
+    "static/media/apple-gray.png": "/static/media/apple-gray.cf1ef306.png",
+    "static/media/apple-iphonexs-max-gold-back-2.png": "/static/media/apple-iphonexs-max-gold-back-2.ab924469.png",
+    "static/media/apple-iphonexs-max-gold.png": "/static/media/apple-iphonexs-max-gold.22e2a38e.png",
+    "static/media/iphone1.png": "/static/media/iphone1.aaaa2f8d.png",
+    "static/media/iphone4.png": "/static/media/iphone4.423388cd.png",
+    "static/media/laptop.png": "/static/media/laptop.3475cd9f.png",
+    "static/media/mac.png": "/static/media/mac.9d8b1929.png",
+    "static/media/shutterstock_-2.png": "/static/media/shutterstock_-2.2e11614c.png",
+    "static/media/watch.png": "/static/media/watch.f07f119f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d33835c5.js",
+    "static/js/2.6ae8e781.chunk.js",
+    "static/css/main.3f100f49.chunk.css",
+    "static/js/main.75854032.chunk.js"
+  ]
+}
