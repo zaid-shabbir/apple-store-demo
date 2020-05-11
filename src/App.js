@@ -24,7 +24,13 @@ function App() {
         <Switch>
           <Route exact path="/" component={SignIn} />
           <Route exact path="/signup" component={Signup} />
-          <Route exact path="/prehome" component={PreHome} />
+          <Route
+            exact
+            path="/prehome"
+            render={() =>
+              isAuth() ? <PreHome /> : <Redirect to="/?error403" />
+            }
+          />
           <Route
             exact
             path="/home"
