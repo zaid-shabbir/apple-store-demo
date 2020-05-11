@@ -98,6 +98,7 @@
   margin-top: 40px;
   width: 103px;
   height: 206px;
+  cursor: pointer;
 }
 .iphone-rare {
   margin-left: calc(50vw - 520px);
@@ -106,6 +107,7 @@
   left: 968px;
   width: 103px;
   height: 206px;
+  cursor: pointer;
 }
 .toggle-line {
   position: absolute;

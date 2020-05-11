@@ -17,6 +17,12 @@ class Iphone extends React.Component {
   handle = () => {
     this.setState({ front: !this.state.front });
   };
+  clickedFront = () => {
+    this.setState({ front: true });
+  };
+  clickedBack = () => {
+    this.setState({ front: false });
+  };
 
   render() {
     let btn_class = this.state.front ? "default-btn" : "clicked-btn";
@@ -45,11 +51,13 @@ class Iphone extends React.Component {
               <div className="buy-now">Buy Now ></div>
             </div>
             <img
+              onClick={this.clickedFront}
               src={iPhoneFrontThumbnail}
               alt="iPhone Front"
               className="iphone-front"
             />
             <img
+              onClick={this.clickedBack}
               src={iPhoneRareThumbnail}
               alt="iPhone Rare"
               className="iphone-rare"
