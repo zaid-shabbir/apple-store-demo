@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0bb57313.chunk.css",
-    "main.js": "/static/js/main.a47c707b.chunk.js",
-    "main.js.map": "/static/js/main.a47c707b.chunk.js.map",
+    "main.css": "/static/css/main.6b104fff.chunk.css",
+    "main.js": "/static/js/main.7223573e.chunk.js",
+    "main.js.map": "/static/js/main.7223573e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d33835c5.js",
     "runtime-main.js.map": "/static/js/runtime-main.d33835c5.js.map",
     "static/js/2.24296877.chunk.js": "/static/js/2.24296877.chunk.js",
     "static/js/2.24296877.chunk.js.map": "/static/js/2.24296877.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2076b73fa0b68d9e546ebab3ceb69022.js": "/precache-manifest.2076b73fa0b68d9e546ebab3ceb69022.js",
+    "precache-manifest.71d7b1dddf21e4551671c714fa26b38f.js": "/precache-manifest.71d7b1dddf21e4551671c714fa26b38f.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.0bb57313.chunk.css.map": "/static/css/main.0bb57313.chunk.css.map",
+    "static/css/main.6b104fff.chunk.css.map": "/static/css/main.6b104fff.chunk.css.map",
     "static/js/2.24296877.chunk.js.LICENSE.txt": "/static/js/2.24296877.chunk.js.LICENSE.txt",
     "static/media/apple-gray.png": "/static/media/apple-gray.cf1ef306.png",
     "static/media/apple-iphonexs-max-gold-back-2.png": "/static/media/apple-iphonexs-max-gold-back-2.ab924469.png",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.d33835c5.js",
     "static/js/2.24296877.chunk.js",
-    "static/css/main.0bb57313.chunk.css",
-    "static/js/main.a47c707b.chunk.js"
+    "static/css/main.6b104fff.chunk.css",
+    "static/js/main.7223573e.chunk.js"
   ]
 }
