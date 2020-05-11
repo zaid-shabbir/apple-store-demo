@@ -34,7 +34,7 @@ class SignInForm extends Component {
       } else {
         // else error will be shown at the top
         setTimeout(() => {
-          this.setState({ signin: "Unable to login" });
+          this.setState({ signin: "Unable to login!!" });
         }, 500);
       }
     };
@@ -57,7 +57,7 @@ class SignInForm extends Component {
           <div className="login-form">
             <h2 className="title">Sign-In</h2>
             <form className="form" onSubmit={this.form.handleSubmit}>
-              <div className="login-error">
+              <div className="error-top-container">
                 <span className="error-top">
                   {this.state.signin ? this.state.signin : ""}
                 </span>

@@ -67,13 +67,6 @@
 .sign-in-link {
   text-decoration: none;
 }
-.error-top {
-  color: red;
-  margin-top: -20px;
-  font-family: poppins;
-  font-weight: bold;
-  font-size: 20px;
-}
-.signup-error {
+.error-top-container {
   text-align: center;
 }
