@@ -2,17 +2,27 @@ import React from "react";
 import Navbar from "./Navbar";
 import Icons from "./Icons";
 import "../css/Iphone.css";
-import iPhone from "../assets/images/Iphone 1.png";
-import iPhoneFront from "../assets/images/apple-iphonexs-max-gold.png";
-import iPhoneRare from "../assets/images/apple-iphonexs-max-gold-back-2.png";
+import iPhoneFront from "../assets/images/iphone1.png";
+import iPhoneRare from "../assets/images/iphone4.png";
+import iPhoneFrontThumbnail from "../assets/images/apple-iphonexs-max-gold.png";
+import iPhoneRareThumbnail from "../assets/images/apple-iphonexs-max-gold-back-2.png";
 
 class Iphone extends React.Component {
   constructor(props) {
     super(props);
     console.log(props);
+    this.state = {
+      front: true,
+    };
   }
+  handle = () => {
+    this.setState({ front: !this.state.front });
+    console.log(this.state);
+  };
 
   render() {
+    let btn_class = this.state.front ? "default-btn" : "clicked-btn";
+    let iphone_image = this.state.front ? iPhoneFront : iPhoneRare;
     return (
       <div>
         <Navbar />
@@ -26,7 +36,7 @@ class Iphone extends React.Component {
             </p>
           </div>
           <div className="iphone-image-part">
-            <img src={iPhone} alt="iPhone" className="iphone-image" />
+            <img src={iphone_image} alt="iPhone" className="iphone-image" />
           </div>
           <Icons />
         </div>
@@ -37,14 +47,18 @@ class Iphone extends React.Component {
               <div className="buy-now">Buy Now ></div>
             </div>
             <img
-              src={iPhoneFront}
+              src={iPhoneFrontThumbnail}
               alt="iPhone Front"
               className="iphone-front"
             />
-            <img src={iPhoneRare} alt="iPhone Rare" className="iphone-rare" />
+            <img
+              src={iPhoneRareThumbnail}
+              alt="iPhone Rare"
+              className="iphone-rare"
+            />
           </div>
-          <div className="toggle-line">
-            <div className="toggle-btn"></div>
+          <div className="toggle-line" onClick={this.handle}>
+            <div className={btn_class} onClick={this.handle}></div>
           </div>
         </div>
       </div>
