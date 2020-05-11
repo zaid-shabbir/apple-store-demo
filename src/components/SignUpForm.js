@@ -48,7 +48,7 @@ class SignUpForm extends Component {
           <div className="signup-form">
             <h2 className="signup-title">Sign-Up</h2>
             <form className="form" onSubmit={this.form.handleSubmit}>
-              <div className="login-error">
+              <div className="signup-error">
                 <span className="error-top">
                   {this.state.signup ? this.state.signup : ""}
                 </span>

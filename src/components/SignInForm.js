@@ -74,9 +74,11 @@ class SignInForm extends Component {
                 onChange={this.form.handleChangeEvent}
                 value={this.state.fields.email}
               />
-              <span className="error">
-                {this.state.errors.email ? this.state.errors.email : ""}
-              </span>
+              <div className="error-container">
+                <span className="error">
+                  {this.state.errors.email ? this.state.errors.email : ""}
+                </span>
+              </div>
               <label htmlFor="password" className="field-label">
                 Password
               </label>
@@ -89,9 +91,9 @@ class SignInForm extends Component {
                 onChange={this.form.handleChangeEvent}
                 value={this.state.fields.password}
               />
-              <label className="error">
+              <span className="error">
                 {this.state.errors.password ? this.state.errors.password : ""}
-              </label>
+              </span>
               <input type="submit" value="Sign-In" className="sign-in" />
             </form>
           </div>
