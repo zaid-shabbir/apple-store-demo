@@ -3,9 +3,9 @@ import "../css/Home.css";
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import apple from "../assets/images/apple-gray.png";
-import iphone from "../assets/images/iphone.png";
-import mac from "../assets/images/mac.png";
-import watch from "../assets/images/watch.png";
+import iphone from "../assets/images/iphone2.png";
+import mac from "../assets/images/mac2.png";
+import watch from "../assets/images/watch2.png";
 
 const Home = () => {
   return (
