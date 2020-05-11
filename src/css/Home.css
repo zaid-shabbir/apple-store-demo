@@ -49,17 +49,19 @@
   justify-content: center;
 }
 .iphone-icon {
-  width: 37px;
+  width: 22px;
   height: 40px;
   margin-left: 10px;
 }
 .mac-icon {
+  margin-top: 13px;
   margin-left: 50px;
-  width: 39px;
-  height: 40px;
+  width: 37px;
+  height: 25px;
 }
 .watch-icon {
+  margin-top: 4px;
   margin-left: 50px;
-  width: 33px;
+  width: 25px;
   height: 35px;
 }
