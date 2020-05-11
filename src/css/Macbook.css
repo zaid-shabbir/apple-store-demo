@@ -74,7 +74,6 @@
   position: relative;
   width: calc(100vw - 110px);
   height: calc(45vh - 120px);
-  border: 2px solid red;
 }
 .inline {
   display: inline-flex;
