@@ -3,10 +3,10 @@
   border-radius: 6px;
   position: absolute;
   width: 480px;
-  height: 450px;
+  height: 490px;
   top: 50%;
   left: 50%;
-  margin: -225px 0 0 -240px;
+  margin: -245px 0 0 -240px;
   background: #ffffff;
 }
 .signup-form {
@@ -14,7 +14,7 @@
 }
 .signup-title {
   margin-top: 0px;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
   text-align: center;
   font-family: poppins;
   font-weight: 900;

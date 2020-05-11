@@ -48,11 +48,11 @@ class SignUpForm extends Component {
           <div className="signup-form">
             <h2 className="signup-title">Sign-Up</h2>
             <form className="form" onSubmit={this.form.handleSubmit}>
-              <div className="error-top-container">
+              {/* <div className="error-top-container">
                 <span className="error-top">
                   {this.state.signup ? this.state.signup : ""}
                 </span>
-              </div>
+              </div> */}
               <label htmlFor="name" className="sign-up-field-labels">
                 Name
               </label>
@@ -65,9 +65,11 @@ class SignUpForm extends Component {
                 onChange={this.form.handleChangeEvent}
                 value={this.state.fields.name}
               />
-              <span className="error">
-                {this.state.errors.name ? this.state.errors.name : ""}
-              </span>
+              <div className="error-container">
+                <span className="error">
+                  {this.state.errors.name ? this.state.errors.name : ""}
+                </span>
+              </div>
               <label htmlFor="email" className="sign-up-field-labels">
                 Email
               </label>
@@ -80,9 +82,11 @@ class SignUpForm extends Component {
                 onChange={this.form.handleChangeEvent}
                 value={this.state.fields.email}
               />
-              <span className="error">
-                {this.state.errors.email ? this.state.errors.email : ""}
-              </span>
+              <div className="error-container">
+                <span className="error">
+                  {this.state.errors.email ? this.state.errors.email : ""}
+                </span>
+              </div>
               <label htmlFor="password" className="sign-up-field-labels">
                 Password
               </label>
@@ -95,9 +99,14 @@ class SignUpForm extends Component {
                 onChange={this.form.handleChangeEvent}
                 value={this.state.fields.password}
               />
-              <label className="error">
-                {this.state.errors.password ? this.state.errors.password : ""}
-              </label>
+              <div className="error-container">
+                <span className="error">
+                  {this.state.errors.password ? this.state.errors.password : ""}
+                </span>
+                <span className="error">
+                  {this.state.signup ? this.state.signup : ""}
+                </span>
+              </div>
               <input type="submit" value="Sign-Up" className="sign-up-btn" />
             </form>
           </div>

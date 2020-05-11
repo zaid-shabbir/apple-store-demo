@@ -66,16 +66,6 @@
 .sign-up-link {
   text-decoration: none;
 }
-.error-container {
-  min-height: 30px;
-}
-.error {
-  color: red;
-  margin-top: -20px;
-  font-family: poppins;
-  font-weight: 400;
-  font-size: 12px;
-}
 .error-top-container {
   text-align: center;
   min-height: 30px;
@@ -86,4 +76,14 @@
   font-family: poppins;
   font-weight: bold;
   font-size: 20px;
+}
+.error-container {
+  min-height: 30px;
+}
+.error {
+  color: red;
+  margin-top: -20px;
+  font-family: poppins;
+  font-weight: 400;
+  font-size: 12px;
 }
