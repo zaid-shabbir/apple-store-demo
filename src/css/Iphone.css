@@ -22,7 +22,7 @@
   opacity: 1;
 }
 .iphone-title-sub {
-  margin-top: 15%;
+  margin-top: 20%;
   margin-left: 8%;
   margin-bottom: 0px;
   width: 674px;
@@ -32,6 +32,7 @@
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+  line-height: 100px;
 }
 .iphone-title-description {
   margin-top: 5%;
