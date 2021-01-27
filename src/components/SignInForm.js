@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import "../css/SignInForm.css";
 import { Link, withRouter } from "react-router-dom";
 import ReactFormInputValidation from "react-form-input-validation";
+import "animate.css";
+import { ReactComponent as PhoneSvg } from "../loader/loader/iphone_blue.svg";
+import { ReactComponent as MacSvg } from "../loader/loader/mac_blue.svg";
+import { ReactComponent as WatchSvg } from "../loader/loader/watch_blue.svg";
 
 class SignInForm extends Component {
   constructor(props) {
@@ -11,6 +14,7 @@ class SignInForm extends Component {
         email: "",
         password: "",
       },
+      loader: false,
       errors: {}, //it will have errors if email or password invalid
       signin: "", //it will have sign in error if user is not authenticated
     };
@@ -27,10 +31,11 @@ class SignInForm extends Component {
         fields.email === "ugcmedia@gmail.com" &&
         fields.password === "123456"
       ) {
-        localStorage.setItem("apple-token", "thisisexampletoken");
+        localStorage.setItem("apple-token", "apple-store-token");
+        this.setState({ loader: true });
         setTimeout(() => {
-          this.props.history.push("/home");
-        }, 500);
+          this.props.history.push("/prehome");
+        }, 3000);
       } else {
         // else error will be shown at the top
         setTimeout(() => {
@@ -42,16 +47,31 @@ class SignInForm extends Component {
   componentDidMount() {
     let token = localStorage.getItem("apple-token");
     if (token && token != null) {
-      this.props.history.push("/home");
+      this.props.history.push("/prehome");
     }
     let err = this.props.location.search;
     if (err.includes(403)) {
       this.setState({ signin: "Login to Continue!!" });
     }
   }
-
+// Sign-in Animation section
   render() {
-    return (
+    return this.state.loader ? (
+      <div className="login-card">
+        <div className="signing-in" style={{ position: "relative" }}>
+          <div className="mac-loader-div">
+            <MacSvg />
+          </div>
+          <div className="phone-loader-div">
+            <PhoneSvg />
+          </div>
+          <div className="watch-loader-div">
+            <WatchSvg />
+          </div>
+          <p style={{ position: "absolute", bottom: 20 }}>Signing in...</p>
+        </div>
+      </div>
+    ) : (
       <div>
         <div className="login-card">
           <div className="login-form">
